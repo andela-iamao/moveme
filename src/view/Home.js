@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Button } from 'react-native-elements';
 import VideoPlayer from 'react-native-video-player';
 import { NavigationActions } from 'react-navigation';
-import { View, Dimensions, StyleSheet, Text } from 'react-native';
+import { View, Dimensions, StyleSheet } from 'react-native';
 
 import { FullOverlay } from '../component';
 
