@@ -1,12 +1,13 @@
+import { API_KEY } from 'react-native-dotenv';
 import * as types from './actionTypes';
-import { createAsync, api } from './util';
+import { createAsync, api, tmdb, tmdbAPI } from './util';
 
 export const fetchPopular = () =>  {
   return createAsync(
     types.FETCH_POPULAR,
     types.FETCH_POPULAR_COMPLETE,
     types.FETCH_POPULAR_ERROR,
-    () => api.get('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=e0a6e1c9f5d3f984503f475e8e228091')
+    () => tmdb.get(tmdbAPI.movie.popular())
   )
 };
 
@@ -15,7 +16,7 @@ export const fetchRecent = () => {
     types.FETCH_RECENT,
     types.FETCH_RECENT_COMPLETE,
     types.FETCH_RECENT_ERROR,
-    () => api.get('https://api.themoviedb.org/3/movie/now_playing?api_key=e0a6e1c9f5d3f984503f475e8e228091&language=en-US&page=1'))
+    () => tmdb.get(tmdbAPI.movie.recent()))
 };
 
 export const fetchComingSoon = () => {
@@ -23,6 +24,6 @@ export const fetchComingSoon = () => {
     types.FETCH_COMING_SOON,
     types.FETCH_COMING_SOON_COMPLETE,
     types.FETCH_COMING_SOON_ERROR,
-    () => api.get('https://api.themoviedb.org/3/movie/upcoming?api_key=e0a6e1c9f5d3f984503f475e8e228091&language=en-US&page=1')
+    () => tmdb.get(tmdbAPI.movie.upcoming())
   )
 };
