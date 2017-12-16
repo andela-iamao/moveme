@@ -7,12 +7,7 @@ const MoveMeLogo = (props) => {
   return (
     <View style={style.container}>
       <Image
-        source={require('../../assets/media/logo.png')}
-        style={style.logoImage}
-      />
-      <Text style={style.logoText}>moveme</Text>
-      <Image
-        source={require('../../assets/media/logo.png')}
+        source={require('../../assets/media/logo2.png')}
         style={style.logoImage}
       />
     </View>
@@ -20,3 +15,9 @@ const MoveMeLogo = (props) => {
 };
 
 export { MoveMeLogo };
+
+{/*<Text style={style.logoText}>moveme</Text>*/}
+{/*<Image*/}
+{/*source={require('../../assets/media/logo.png')}*/}
+{/*style={style.logoImage}*/}
+{/*/>*/}

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { Button } from 'react-native-elements';
 import VideoPlayer from 'react-native-video-player';
 import { NavigationActions } from 'react-navigation';
-import { View, Dimensions, StyleSheet, Text } from 'react-native';
+import { View, Dimensions, StyleSheet } from 'react-native';
 
 import { FullOverlay } from '../component';
 
 import style from './style/style';
-
 
 const { height: HEIGHT, width: WIDTH } = Dimensions.get('window');
 const CUSTOM_VIDEO_STYLE = StyleSheet.create({

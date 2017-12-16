@@ -6,18 +6,21 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center'
-  },
-  logoImage: {
-    width: 30,
-    height: 30,
+    justifyContent: 'center',
     marginRight: 5,
     marginLeft: 5,
-    marginTop: 7
+    marginTop: 7,
+    alignItems: 'center',
+    borderBottomWidth: 5,
+
+  },
+  logoImage: {
+    width: 100,
+    height: 30,
   },
   logoText: {
-    lineHeight: 38,
+    lineHeight: 42,
     fontWeight: 'bold',
-    fontSize: 24
+    fontSize: 18
   }
 });

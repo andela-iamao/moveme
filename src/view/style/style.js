@@ -17,6 +17,7 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFF'
   },
+  discoverHeaderText: { fontSize: 16 },
   wideRoundButton: {
     borderRadius: 40,
     width: 220
@@ -24,5 +25,6 @@ export default StyleSheet.create({
   centerBottom: { position: 'absolute', bottom: 80 },
   primaryButton: {
     backgroundColor: '#4299e2'
-  }
+  },
+  containerPadding: { padding: 10 }
 });
